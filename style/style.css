@@ -776,6 +776,9 @@ footer{
         width: 100%;
         height: auto;
     }
+    .title-awesome {
+        align-items: center;
+    }  
     .pricing-box-one, .pricing-box-two, .pricing-box-three {
         width: 100%;
         max-width: 300px;
