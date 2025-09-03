@@ -1,0 +1,784 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    gap: 600px;
+    display: flex;
+    align-items: center;
+    padding: 10px; 
+    justify-content: space-around; 
+
+}
+nav img {
+    width: 100px;
+}
+a {
+   text-decoration: none;
+   color: gray;
+   font-weight: bold;
+}
+ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+
+    justify-content: space-around;
+}
+header {
+    background-image: url('../images/headerBg.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 200px;
+    box-sizing: border-box;
+}
+header .izquierda img {
+    width: 100px;
+    height: auto;
+}
+header .izquierda h2 {
+    font-size: 40px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+    width: 600px;
+}
+header .izquierda p {
+    font-size: 18px;
+    width: 500px;
+    margin-bottom: 20px;
+}
+header .izquierda button {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+header .formulario {
+    background-color: white;
+    color: black;
+    width: 450px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+header .formulario h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 15px;
+}
+header .formulario h3 span {
+    color: #ff9c4a;
+}
+header .formulario input {
+    width: 100%;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-top: none; 
+    font-size: 14px;
+    outline: none;
+}
+header .formulario .button {
+    background-color: #ff9c4a;
+    color: white;
+    border: none;
+    padding: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+header .formulario .button:hover {
+    background-color: #ff9c4a;
+}
+section.social {
+    padding: 20px 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+section.social h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+section.social p {
+    color: #777;
+    font-size: 15px;
+    width: 500px;
+}
+
+section.social .icons {
+    display: flex;
+    gap: 40px;
+}
+
+section.social .icons img {
+    width: 50px;
+    height: auto;
+    opacity: 0.4;
+    transition: opacity 0.3s;
+    cursor: pointer;
+}
+
+section.social .icons img:hover {
+    opacity: 0.8;
+}
+.sec-tabs{
+    display: flex;
+    padding-left: 90px;
+    padding: 100px 0 60px 0;
+}
+.tabs {
+    display: block;
+    margin: 50px 100px 0 200px;
+    text-align: center;
+    width: 100px;
+}
+.orange{
+    background-color: #ff9c4a;
+}
+.gray{
+    background-color: #333;
+}
+.tabs h3{
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px; 
+    color: white;
+}
+.sec-tabs .tabs div {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    height: 100px; 
+}
+.sec-tabs{
+    background-color: #f5f5f5;
+    justify-content: space-between;
+}
+.tab-content {
+    display: block;
+    width: 600px;
+    height: 300px;
+    padding: 30px 10px;
+}
+.tab-content h3 {
+    font-size: 25px;
+    margin-bottom: 50px;    
+}
+.tab-content p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+} 
+.tab-content button {
+    background-color: #ff9c4a;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+.image{
+    margin-top: 30px;
+    text-align: center;
+    padding: 100px 150px 0 0;
+}
+.sub-list{
+    display: flex;
+    padding: 100px 200px;
+    justify-content: space-between;
+}
+.sub-list-content {
+    max-width: 500px;
+}
+.line-orange {
+    color: #ff9c4a;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+}
+.list-one{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.list-one img{
+    width: 50px;
+    height: auto;
+    margin-right: 30px;
+}
+.list-one p{
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+.list-two{
+    display: flex;
+    align-items: center;
+}
+.list-two img{
+    width: 50px;
+    height: auto;
+    margin-right: 30px;
+}
+.list-two p{
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+.title h4{
+    font-size: 19px;
+    font-weight: lighter;
+    margin: 0;
+}
+.standard-section{
+    display: flex;
+    justify-content: space-around;
+    padding: 150px 120px 150px 40px;
+    background-color: #f7f7f7;
+}
+.standard{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 600px;
+    
+}
+.standard .parrafo{
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+.standard h2{
+    margin: 0;
+}
+.title-awesome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+.box-design{
+    display: flex;
+    gap: 150px;
+    padding: 100px 200px;
+}
+.design,.design-two,
+.design-three{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+.pricing{
+    text-align: center;
+    padding: 100px 200px;
+    background-color: #f7f7f7;
+}
+.pricing-box{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding-top: 50px;
+    align-items: flex-end;
+}
+.pricing-box-one {
+    width: 400px;
+    border: 1px solid #ddd;
+    text-align: center;
+    background: #fff;
+    height: 537px;
+}
+.pricing-header {
+    background: #333;
+    color: #fff;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+}
+.pricing-zone {
+    background: #333;
+    color: #fff;
+    padding: 30px;
+}
+.pricing-zone h2 {
+    font-size: 70px;
+    margin: 0;
+}
+.pricing-zone p {
+    margin: 5px 0 0;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+    color: #777 ;
+}
+.font-small {
+    font-size: 34px;
+}
+.divider {
+    height: 5px;
+    background: orange;
+}
+.pricing-content {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.pricing-content li {
+    padding: 18px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+    font-size: 14px;
+}
+.pricing-box-two {
+    width: 400px;
+    border: 1px solid #ddd;
+    text-align: center;
+    background: #fff;
+    }
+.divider-pricing {
+    background: orange;
+    height: 50px;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.pricing-box-three{
+    width: 400px;
+    border: 1px solid #ddd;
+    text-align: center;
+    background: #fff;
+    height: 537px;
+}
+.customers{
+    padding-top: 100px;
+    text-align: center;
+    
+    padding-bottom: 100px;
+}
+.cutomers-title{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.customers-title h2{
+    font-size: 40px;
+    font-weight: normal;
+}
+.text{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+.text-into{
+    background-image: url('../images/textBubble.png');
+    width: 300px;
+    height: 145px;
+    color: #555;
+
+}
+.text-into p{
+    padding: 10px;
+    padding-top: 15px;
+    font-size: 16px;
+    margin: 0;  
+    text-align: left;
+}
+.text-person{
+    justify-content: space-evenly;
+    display: flex;
+    gap: 100px;
+    padding-top: 10px;
+}
+.text-person-item{
+    display: flex;
+    justify-content: center;
+}
+.text-person img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.text-person-info{
+    flex-direction: column;
+    margin-right: 80px;
+}
+.stylish {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('../images/bg2.png') no-repeat center center / cover;
+    color: white;
+    text-align: center;
+    padding: 100px 200px;
+}
+.stylish h2 {
+    font-size: 42px;
+    font-weight: lighter;
+    margin: 0;
+}
+.stylish .parrafo {
+    font-size: 22px;
+    color: #9d9d9d;
+    margin: 20px 0 0 0;
+}
+.line {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+.stylish button {
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    padding: 11px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.contact {
+    padding: 100px 200px;
+    text-align: center;
+}
+
+.contact-title h2 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #333;
+    font-weight: lighter;
+}
+
+.contact-title .line {
+    width: 50px;
+    height: 2px;
+    background: #f39c12; 
+    margin: 0 auto 15px;
+}
+
+.contact-title .parrafo {
+    color: #777;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.formulario-two form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.form-left,
+.form-right {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+input,  
+textarea {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    font-size: 14px;
+}
+textarea {
+    height: 150px;
+}
+.form-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.button {
+    background: #f39c12;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0 0 0;
+    color: #555;
+}
+@media (max-width:1279px) {
+    nav{
+        gap: 0;
+    }
+    header{
+        padding: 40px;
+    }
+    header .izquierda h2 {
+        font-size: 30px;
+        width: auto;
+    }
+    header .formulario {
+        width: 300px;
+    }
+    section.social {
+        padding: 10px 40px;
+    }
+    section.social p{
+        width: 100%;
+    }
+    .social .icons{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .sec-tabs{
+        padding: 50px 40px;
+    }
+    .tabs{
+        margin: 20px 100px 0 20px;
+        width: 80px;
+    }
+    .tab-content{
+        width: 100%;
+        height: auto;
+        padding: 20px 10px;
+    }
+    .image{
+        padding: 0;
+    }
+    .sub-list{
+        padding: 50px 40px;
+    }
+    .sub-list-content{
+        width: 300px;
+    }
+    .standard-section{
+        padding: 50px 40px;
+        gap: 50px;
+    }
+    .box-design{
+        padding: 50px 40px;
+    }
+    .pricing{
+        padding: 50px 40px;
+    }
+    .customers{
+        padding: 50px 40px;
+    }
+    .text{
+        gap: 20px;
+    }
+    .text-person{
+        display: flex;
+        gap: 10px;
+        padding-top: 10px;
+    }
+    .stylish{
+        padding: 50px 40px;
+    }
+}
+@media (max-width:920px){
+    nav{
+        align-items: center;
+    }
+    header .izquierda{
+        width: 300px;
+    }
+    header .izquierda p{
+        width: 100%;
+    }
+    header .izquierda h2 {
+        font-size: 20px;
+        width: auto;
+    }
+    section.social{
+        flex-direction: column;
+    }
+    .sec-tabs{
+        padding: 10px 20px;
+        align-items: center;
+    }
+    .sub-list{
+        padding: 50px 20px;
+        align-items: center;
+    }
+    .sub-list-content{
+        width: 250px;
+        font-size: 15px;
+    }
+    .box-design{
+        padding: 50px 40px;
+        gap: 10px;
+    }
+    .pricing{
+        padding: 20px 20px;
+    }
+    .pricing-box{
+        gap: 10px;
+    }
+    .customers{
+        padding: 20px 20px;
+    }
+    .text-into p{
+        font-size: 15px;
+    }
+    .text-person{
+        gap: 0px;
+    }
+}
+@media (max-width:768px){
+    nav{
+        flex-direction: column;
+        gap: 0px;
+        padding: 10px 0;
+    }
+    ul{
+        gap: 20px;
+        padding: 10px 0;
+    }
+    header{
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+        text-align: center;
+    }
+    .formulario-two form{
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-left,
+    .form-right{
+        width: 100%;
+        max-width: 400px;
+    }
+    section.social{
+        text-align: center;
+    }
+    section.social .icons{
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .sec-tabs{
+        flex-direction: column;
+        padding: 20px 10px;
+    }   
+    .tab-content{
+        text-align: center;
+    }
+    .sub-list{
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+    .sub-list-content{
+        width: 100%;
+        text-align: center;
+    }
+    .standard-section{
+        flex-direction: column;
+        padding: 20px 10px;
+        justify-content: center;
+    }
+    .standard{
+        width: 100%;
+    }
+    .box-design{
+        flex-direction: column;
+        padding: 20px 10px;
+        align-items: center;
+    }
+    .pricing{
+        padding: 20px 10px;
+    }
+    .pricing-box{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .text {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .text-person {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .text-person-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .text-person-info {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+    .contact{
+        padding: 20px 10px;
+    }
+}
+@media (max-width:  480px){
+    ul{
+        gap: 10px;
+        font-size: 14px;
+    }
+    .social .icons{
+        flex-wrap: wrap;
+    }
+    .tab-content {
+        text-align: center;
+        padding: 10px 5px;
+    }
+    .image-two img{
+        width: 100%;
+        height: auto;
+    }   
+    .image-three img{
+        width: 100%;
+        height: auto;
+    }
+    .pricing-box-one, .pricing-box-two, .pricing-box-three {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+}
